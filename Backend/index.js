@@ -2,7 +2,6 @@ const express = require('express')
 const mongoose = require('mongoose')
 const routes = require('./routes/blog.js')
 const cors =  require('cors')
-// const dbconnect = require('./db.js')
 
 
 
@@ -14,7 +13,6 @@ const PORT = process.env.port || 5000
 app.use(express.json())
 app.use(cors())
 
-// dbconnect();
 mongoose
 .connect(process.env.MONGO_URI)
 .then(() => console.log("Database Connected"))
