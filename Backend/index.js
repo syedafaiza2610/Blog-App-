@@ -22,5 +22,5 @@ app.use(routes)
 
 
 
-app.get("/test", (req, res) => res.send("todo server is running on vercel"))
+app.get("/test", (req, res) => res.send("Blogging app is running on 5000"))
 app.listen(PORT, () => console.log(`Server is Running on: ${PORT} `))
